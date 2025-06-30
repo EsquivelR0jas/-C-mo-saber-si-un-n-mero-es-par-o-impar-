@@ -1,0 +1,105 @@
+@font-face {
+    font-family:"s" ;
+    src: url(Simanja.woff2);
+}
+@font-face {
+    font-family: "handle";
+    src: url(Handlee-Regular.woff2);
+}
+
+
+:root {
+    --color-fondo: #fefae0;
+    --color-texto: #6b4226;
+    --color-boton: #fcd5b5;
+    --color-boton-hover: #eabf9f;
+    --color-resultado-fondo: #fbe4d8;
+    --color-borde: #d6b18a;
+    --color-input-borde: #f5e0c3;
+  }
+  @media (prefers-color-scheme: dark) {
+  :root {
+    --color-fondo: #3e2c23;
+    --color-texto: #fefae0;
+    --color-boton: #f3caa9;
+    --color-boton-hover: #d99873;
+    --color-resultado-fondo: #5c3d2e;
+    --color-borde: #b08d72;
+    --color-input-borde: #7c5c44;
+  }
+}
+
+  
+  body {
+    font-family: "handle";
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 30px;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  h2 {
+    font-family: "s" ;
+    margin-top: 0;
+    color: var(--color-texto);
+  }
+
+  label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-input-borde);
+    border-radius: 8px;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  button {
+    font-family: "handle";
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-boton);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: var(--color-boton-hover);
+  }
+
+  .resultado {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--color-resultado-fondo);
+    border-left: 4px solid var(--color-destacado);
+    border-radius: 8px;
+  }
+
+  hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 2px dashed var(--color-borde);
+  }
